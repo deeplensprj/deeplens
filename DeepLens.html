@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html class="js no-touch rgba hsla textshadow opacity svg wf-volkhov-i4-active wf-sourcecodepro-n4-active wf-sourcecodepro-n7-active wf-sourcesanspro-i2-active wf-sourcesanspro-i3-active wf-sourcesanspro-i4-active wf-sourcesanspro-i6-active wf-sourcesanspro-i7-active wf-sourcesanspro-i9-active wf-sourcesanspro-n2-active wf-sourcesanspro-n3-active wf-sourcesanspro-n4-active wf-sourcesanspro-n6-active wf-sourcesanspro-n7-active wf-sourcesanspro-n9-active wf-volkhov-i7-active wf-volkhov-n4-active wf-volkhov-n7-active wf-active gr__people_inf_ethz_ch"
+  lang="en" style="">
+<!--<![endif]-->
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>DeepLens: Shallow Depth of Field from a Single Image</title>
+  <meta name="description" content="DeepLens: Shallow Depth of Field from a Single Image">
+  <!-- Webmaster Tools verfication -->
+  <meta name="google-site-verification" content="googleb0479c04a25255c3">
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- For all browsers -->
+  <link rel="stylesheet" href="./DeepLens/style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+    crossorigin="anonymous">
+  <!-- Webfonts -->
+  <script src="./DeepLens/anims.js"></script>
+
+  <meta http-equiv="cleartype" content="on">
+
+
+</head>
+
+<body id="page" data-gr-c-s-loaded="true">
+
+  <!--<div id="main" role="main">-->
+    <article class="entry">
+      <div class="entry-wrapper">
+        <br>
+        <br>
+        <!-- <header class="entry-header">-->
+        <h1 class="entry-titleProject" style="margin-top:5px;">DeepLens: Shallow Depth of Field from a Single Image</h1>
+        <!-- </header>-->
+        <div class="entry-titleAuthors">
+          <a href="http://people.inf.ethz.ch/aksoyy/">Lijun Wang</a>,
+          <a href="http://users.eecs.northwestern.edu/~xsh835/index.html">Xiaohui Shen</a>,
+          <a href="http://cs-people.bu.edu/jmzhang/">Jianming Zhang</a>,
+          <a href="http://www.oliverwang.info/">Oliver Wang</a>
+          <br> 
+          <a href="https://research.adobe.com/person/zhe-lin/">Zhe Lin</a>,
+          <a href="http://scholar.google.com/citations?user=NwSOdTQAAAAJ&hl=en">Chih-Yao Hsieh</a>,
+          <a href="https">Sarah Kong</a> and
+          <a href="http://scholar.google.com/citations?user=EfTwkXMolscC&hl=zh-CN">Huchuan Lu</a>
+        </div>
+        <div class="entry-titleVenue">
+          ACM Transactions on Graphics (Proc. SIGGRAPH Asia), 2018
+        </div>
+      </div>
+      <!-- /.entry-wrapper -->
+      <div class="entry-wrapper">
+        <div class="entry-contentProject">
+          <div style="display: table; clear: both; height: 10.5em; vertical-align: center">
+          <div id= "slider_1" style="width:7.5em; height: 10.5em; float: left; background-size: auto 10.5em; background-repeat: no-repeat"></div>
+          <div id= "slider_5" style="width:13.55em; height: 10.5em; float: left; background-size: auto 10.5em; background-repeat: no-repeat"></div>
+          <div id= "slider_3" style="width:8em; height: 10.5em; float: left; background-size: auto 10.5em; background-repeat: no-repeat"></div>
+          <div id= "slider_4" style="width:15em; height: 10.5em; float: left; background-size: auto 10.5em; background-repeat: no-repeat"></div>
+        </div>
+        <p style="font-size:12px;">
+            Each high resolution, shallow DoF image shown here was synthetically generated from an all-in-focus input image with a single forward pass through
+            a neural network system. Users can freely interact with the system by modifying the focal plane and aperture size. Please view zoomed-in on screen, and use
+            Acrobat Reader to watch the refocusing animations. Photo credits: Franco Vannini, Jim Liestman, wombatarama, and European Space Agency.   
+        </p>
+          <p style="text-align:center; padding-top: 3em">
+            <b>Abstract</b>
+          </p>
+
+          <p>
+              We aim to generate high resolution shallow depth-of-field (DoF) images from
+              a single all-in-focus image with controllable focal distance and aperture size.
+              To achieve this, we propose a novel neural network model comprised of
+              a depth prediction module, a lens blur module, and a guided upsampling
+              module. All modules are differentiable and are learned from data. To train
+              our depth prediction module, we collect a dataset of 2462 RGB-D images
+              captured by mobile phones with a dual-lens camera, and use existing segmentation 
+              datasets to improve border prediction. We further leverage a synthetic
+              dataset with known depth to supervise the lens blur and guided upsampling
+              modules. The effectiveness of our system and training strategies are verified
+              in the experiments. Our method can generate high-quality shallow DoF
+              images at high resolution, and produces significantly fewer artifacts than
+              the baselines and existing solutions for single image shallow DoF synthesis.
+              Compared with the iPhone portrait mode, which is a state-of-the-art shallow
+              DoF solution based on a dual-lens depth camera, our method generates
+              comparable results, while allowing for greater flexibility to choose focal
+              points and aperture size, and is not limited to one capture setup.
+              
+          </p>
+
+          <p style="text-align:center; padding-top:5em">
+            <b>Downloads</b>
+          </p>
+
+          <p style="text-align: center; padding-bottom: 3em">
+          <a href="https://www.github.com/a"><i class="far fa-file-pdf fa-4x" style="padding-right:0.5em" title="Paper"></i></a>
+          <a href="https://www.github.com/a"><i class="far fa-file-code fa-4x" style="padding-right:0.5em" title="Code"></i></a>
+          <a href="https://www.github.com/a"><i class="fas fa-database fa-4x" title="DataSet"></i></a>
+          </p>
+
+          <p style="text-align:center; padding-top: 5em">
+            <b>Video</b>
+          </p>
+
+          <p style="text-align:center;">
+            <iframe width="560" height="315" src="./DeepLens/QYIQbfnS9jA.html" frameborder="0"> </iframe>
+          </p>
+
+          <p style="text-align:center; padding-top: 5em">
+              <b>Contact</b>
+          </p>
+          <p style="text-align:center;">
+              <a href="wlj@mail.dlut.edu.cn"><i class="far fa-envelope fa-4x"></i></a>
+          </p>
+          
+          <p style="text-align:center;">
+            <b>BibTeX</b>
+          </p>
+          <p>
+          </p>
+          <div class="pub-bibtex">
+            @ARTICLE{deeplens,
+            <br> author={Wang Lijun and Shen Xiaohui and Zhang Jianming and Wang Oliver and Hsieh Chih-Yao and Kong Sarah and Lu Huchuan},
+            <br> title={DeepLens: Shallow Depth of Field from a Single Image},
+            <br> journal={ACM Trans. Graph. (Proc. SIGGRAPH Asia)},
+            <br> year={2018},
+            <br> pages = {6:1-6:11},
+            <br> volume = {37},
+            <br> number = {6}
+            <br> }
+          </div>
+          <p></p>
+
+
+</body>
+
+</html>
