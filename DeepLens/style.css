@@ -105,3 +105,8 @@ table
     width:100%; 
     vertical-align:middle
 }
+.downloads a:hover
+{
+    color: hotpink;
+}
+
